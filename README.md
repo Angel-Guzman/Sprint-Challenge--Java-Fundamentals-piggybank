@@ -25,9 +25,32 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Describe why Java is called an object oriented, strongly typed language.
+
+Object oriented is because Java begins with a class, and from that class you can make objects. Most of
+the code is done inside of these objects and having them interact/work with each other. Strongly typed is that 
+all data in Java has a type (int, string, long, boolean, double, etc.) once you set the type of something it can't
+be changed therefore making Java strict.
+
+
 2. Give examples of Java Collections explaining the use and differences between them.
+
+Arrays, ArrayList, HashMap, are some examples of Collections in Java.
+ArrayList is the most common used in Java Web Development. This is mostly because Arrays have a fixed length
+so you can't add more elements to it, whereas an ArrayList can dynamically grow and shrink after adding/removing
+elements. There are many differences between ArrayList and HashMap but one that stands out is that ArrayList stores the
+element's value, while HashMap stores a key & value pair for the element.
+
 3. What is recursion and how does it differ from regular looping?
+
+Recursion is when a function calls itself. Normally regular looping (iterative programming) is prefereed but there are
+some cases where recursion is a better choice. Recursion requires more space/time to solve a problem but it provides
+simple and clean code for certain problem. Tree traversals problems are typically solved using recursions as well.
+
+
 4. Explain the differences between Abstract Classes and Interfaces including scenarios of when to use them.
+
+We use Abstract Classes when we need a method that slightly changes based on where we need to use the method. Example being that we have Dog, Cat, and Horse classes that all make a different sound. So we use an abstract Animal class to create an abstract sound method which can then return different strings such as "woof", "meow", etc. We use Interfaces for full abstraction because in interfaces methods don't have a body so you must implement them before you can access those methods. Abstract classes can extend only one class or abstract class at a time, where an interface can extend any number of interfaces at a time. The keyword "abstract" is mandatory in Abstract classes when declaring an abstract method, whereas interfaces the keyword is optional. Abstract classes can have protected, public, and abstract methods, wheras interfaces can only have public abstract methods.
+
 
 ## Instructions
 
