@@ -32,5 +32,12 @@ public class Main
 
         System.out.println();
         System.out.println(piggyBank.toString());
+
+        double bankTotal = quarter.getTotal(1) + dime1.getTotal(1) + dollar5.getTotal(1) 
+        + nickel3.getTotal(1) + dime7.getTotal(1) + dollar1.getTotal(1) + penny10.getTotal(1);
+        double bankTotalRounded = Math.round(bankTotal * 100.0) / 100.0;
+
+        System.out.println("\nThe piggy bank holds $" + bankTotalRounded + 0);
+        System.out.println();
     }
 }
