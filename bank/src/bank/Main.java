@@ -39,5 +39,23 @@ public class Main
 
         System.out.println("\nThe piggy bank holds $" + bankTotalRounded + 0);
         System.out.println();
+
+        // $4
+        // 7 Dimes
+        // $1
+        // 10 Pennies
+
+        piggyBank.remove(quarter);
+        piggyBank.remove(dime1);
+        piggyBank.remove(nickel3);
+        System.out.println(piggyBank.toString());
+
+        double newBankTotal = dollar5.getTotal(1) + dime7.getTotal(1) + dollar1.getTotal(1)
+        + penny10.getTotal(1);
+        double newBankTotalRounded = Math.round(newBankTotal * 100.0) / 100.0;
+
+        System.out.println("\nThe piggy bank holds $" + newBankTotalRounded + 0);
+        System.out.println();
+
     }
 }
